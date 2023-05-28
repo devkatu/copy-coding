@@ -1,0 +1,611 @@
+
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans Jp", sans-serif;
+}
+
+.sp {
+  display: none;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_ttl {
+  font-family: "Noto Sans Jp", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.header_nav {
+  font-family: "Noto Sans Jp", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header_nav ul {
+  display: flex;
+}
+
+.header_nav ul li {
+  margin: 0 20px;
+}
+
+.header_nav ul li a:hover {
+  border-bottom: 3px solid #ffcf65;
+}
+
+.hero {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/hero_image.jpg) no-repeat center/cover;
+}
+
+.hero_txt {
+  text-align: center;
+  color: white;
+  font-family: "Noto Sans Jp", sans-serif;
+  font-size: 26px;
+  line-height: 2;
+}
+
+.title2 {
+  padding: 10px;
+  margin-bottom: 24px;
+  border-left: 5px solid rgb(255, 207, 101);
+  background-color: rgb(255, 241, 191);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.service {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+.service_txt {
+  margin-bottom: 20px;
+}
+
+.service_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.service_card {
+  width: 300px;
+  margin: 0 10px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 0px;
+  text-align: center;
+}
+
+.service_cttl {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #aaa;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service_cfig {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.service_cfig img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio_txt {
+  margin-bottom: 20px;
+}
+
+.portfolio_btn {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 207, 101);
+  text-align: center;
+}
+
+.portfolio_slick {
+  width: 900px;
+  margin: 0 auto 50px;
+}
+
+.portfolio_slick figure {
+  width: 700px;
+  margin: 0 20px;
+}
+
+.portfolio_slick figure figcaption {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.portfolio_slick .slick-prev::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #888;
+  border-left: 3px solid #888;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.portfolio_slick .slick-next::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #888;
+  border-right: 3px solid #888;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.skill {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+.skill_txt {
+  margin-bottom: 20px;
+}
+
+.skill_wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill_card {
+  width: 450px;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill_card figure {
+  width: 30%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.skill_cwrap {
+  width: 65%;
+}
+
+.skill_cttl {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.skill_cttl span {
+  display: block;
+  color: gold;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.skill_ctxt {
+  line-height: 1.4;
+}
+
+.price {
+  padding: 50px 0;
+}
+
+.price_txt {
+  margin-bottom: 20px;
+}
+
+.price_txt {
+  margin-bottom: 20px;
+}
+
+.price tbody th {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.price tbody td {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.price_tbl {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price_tbl tbody th {
+  width: 400px;
+  border: 1px solid #818181;
+  background-color: #d5f589;
+  vertical-align: middle;
+}
+
+.price_tbl tbody td {
+  width: 500px;
+  border: 1px solid #818181;
+  vertical-align: middle;
+}
+
+.profile {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+.profile_txt {
+  padding: 0 40px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact_txt {
+  margin-bottom: 20px;
+}
+
+.contact_icon {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_icon p {
+  width: 64px;
+  margin: 0 20px;
+  height: auto;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #444;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer p small {
+  font-size: 12px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.go_top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffcd6b;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.go_top::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.go_top:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 3vw;
+  }
+
+  .title2 {
+    margin-bottom: 6vw;
+    padding: 2vw;
+    font-size: 5vw;
+  }
+
+  .header {
+    height: 50px;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+  }
+
+  .header_wrap {
+    height: 100%;
+    background-color: white;
+  }
+
+  .header_nav {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+    z-index: -10;
+  }
+
+  .header_nav.open {
+    transform: translateY(0);
+  }
+
+  .header_nav ul {
+    display: block;
+  }
+
+  .header_nav ul li {
+    margin: 0;
+    border-bottom: 1px dotted black;
+    background-color: #fff1bf;
+  }
+
+  .header_nav ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .header_nav ul li a:hover {
+    border-bottom: none;
+  }
+
+  /*  ハンバーガーメニュー  */
+  .menu-btn {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    border-radius: 2px;
+    width: 32px;
+    z-index: 20;
+  }
+
+  .menu-btn span {
+    position: relative;
+    display: block;
+    height: 32px;
+    z-index: 3;
+  }
+
+  .menu-btn:before,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    top: 50%;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: -1px;
+    background-color: #5b77b6;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .menu-btn span:before {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  .menu-btn span:after {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+
+  /* メニューを開いた状態のハンバーガー */
+  .menu-btn.open:before {
+    opacity: 0;
+  }
+
+  .menu-btn.open span:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .menu-btn.open span:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .hero {
+    height: 50vw;
+  }
+
+  .hero_txt {
+    font-size: 4vw;
+  }
+
+  .service {
+    padding: 10vw 0;
+  }
+
+  .service_txt {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .service_wrap {
+    display: block;
+  }
+
+  .service_card {
+    width: 90%;
+    margin: 0 auto 10vw;
+    padding: 5vw 10vw;
+  }
+
+  .service_cttl {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .service_cfig {
+    width: 50%;
+    margin: 0 auto 4vw;
+  }
+
+  .service_ctxt {
+    font-size: 4vw;
+  }
+
+  .portfolio {
+    padding: 10vw 0;
+  }
+
+  .portfolio_txt {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .portfolio_slick {
+    width: 100%;
+  }
+
+  .portfolio_slick figure {
+    width: 80vw;
+  }
+
+  .portfolio_slick .slick-next{
+    right: 2vw;
+  }
+  .portfolio_slick .slick-prev{
+    left: 2vw;
+  }
+
+  .portfolio_btn {
+    width: 35vw;
+    font-size: 3vw;
+  }
+
+  .skill {
+    padding: 10vw 0;
+  }
+
+  .skill_txt {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .skill_card {
+    width: 100%;
+    padding: 5vw;
+  }
+
+  .skill_cttl {
+    margin-bottom: 4vw;
+    font-size: 5vw;
+  }
+
+  .skill_cttl span {
+    font-size: 3vw;
+  }
+
+  .skill_ctxt {
+    font-size: 3vw;
+  }
+
+  .price {
+    padding: 10vw 0;
+  }
+
+  .price_txt {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .price_tbl {
+    width: 90%;
+  }
+
+  .price_tbl tbody th {
+    width: 45%;
+    font-size: 3vw;
+  }
+
+  .price_tbl tbody td {
+    width: 55%;
+    font-size: 3vw;
+  }
+
+  .profile {
+    padding: 10vw 0;
+  }
+
+  .profile_txt {
+    font-size: 4vw;
+    padding: 0 6vw;
+  }
+
+  .contact {
+    padding: 10vw 0;
+  }
+
+  .contact_txt {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+
+  .contact_icon p {
+    width: 12vw;
+    margin: 0 3vw;
+  }
+
+  .go_top {
+    bottom: 5vw;
+    right: 5vw;
+  }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  リセットCSSとページ用CSS  -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!--  google font  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+
+  <!-- slick用のcss -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
+
+  <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+
+  <!-- scroll reveal -->
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js" defer></script>
+
+  <!--  スクリプト  -->
+  <script src="./js/index.js" defer></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header_wrap">
+      <h1 class="header_ttl">KATSU portforio</h1>
+      <nav class="header_nav">
+        <ul>
+          <li><a href="#service">service</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#price">price</a></li>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menu-btn"><span></span></button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="hero_txt">WEBコーダーKATSUの<br>ポートフォリオサイトです。<br>コーディングなら<br class="sp">お任せください。</p>
+  </div>
+  <section class="service" id="service">
+    <div class="wrapper">
+      <h2 class="title2">SERVICE</h2>
+      <p class="service_txt">以下のサービスをご提供します！</p>
+      <div class="service_wrap">
+        <div class="service_card srv">
+          <h3 class="service_cttl">コーディング</h3>
+          <figure class="service_cfig">
+            <img src="./image/service_code.png" alt="コーディング">
+          </figure>
+          <p class="service_ctxt">
+            HTML5,css3,javascript/jQueryを駆使してSEOに強く、且つデザインに忠実なコーディングを行います。
+          </p>
+        </div>
+        <div class="service_card srv">
+          <h3 class="service_cttl">WordPress移行</h3>
+          <figure class="service_cfig">
+            <img src="./image/service_wordpress.png" alt="wordpress移行">
+          </figure>
+          <p class="service_ctxt">
+            HTMLで作成した静的なサイトをwordpressへ移行し、快適なサイト更新を行えるようお手伝いします。
+          </p>
+        </div>
+        <div class="service_card srv">
+          <h3 class="service_cttl">レスポンシブ化</h3>
+          <figure class="service_cfig">
+            <img src="./image/service_smartphone.png" alt="レスポンシブ化">
+          </figure>
+          <p class="service_ctxt">
+            現代のwebサイト閲覧はスマートフォンからのアクセスが大半を占めます。スマートフォン、またタブレットからの閲覧を考慮したレスポンシブwebサイトの作成を行います。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <div class="wrapper">
+      <h2 class="title2">PORTFOLIO</h2>
+      <p class="portfolio_txt">WEBサイト制作事例、ランディングページやコーポレートサイトの模写等を掲載しています。</p>
+      <div class="portfolio_slick srv" id="portfolio_slick">
+        <figure>
+          <img src="./image/portfolio_img_new-trade.png" alt="株式会社ニュートレード社様">
+          <figcaption>【制作事例】株式会社ニュートレード社様 WEBサイト</figcaption>
+        </figure>
+        <figure>
+          <img src="./image/portfolio_img_new-trade.png" alt="株式会社ニュートレード社様">
+          <figcaption>【制作事例】株式会社ニュートレード社様 WEBサイト</figcaption>
+        </figure>
+        <figure>
+          <img src="./image/portfolio_img_new-trade.png" alt="株式会社ニュートレード社様">
+          <figcaption>【制作事例】株式会社ニュートレード社様 WEBサイト</figcaption>
+        </figure>
+        <figure>
+          <img src="./image/portfolio_img_new-trade.png" alt="株式会社ニュートレード社様">
+          <figcaption>【制作事例】株式会社ニュートレード社様 WEBサイト</figcaption>
+        </figure>
+        <figure>
+          <img src="./image/portfolio_img_new-trade.png" alt="株式会社ニュートレード社様">
+          <figcaption>【制作事例】株式会社ニュートレード社様 WEBサイト</figcaption>
+        </figure>
+      </div>
+      <div class="portfolio_btn"><a href="#">制作物の一覧はこちら</a></div>
+    </div>
+  </section>
+  <section class="skill" id="skill">
+    <div class="wrapper">
+      <h2 class="title2">SKILL</h2>
+      <p class="skill_txt">WEB制作のスキルとして以下の言語やツールを使用できます。</p>
+      <div class="skill_wrap">
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_htmlcss.png" alt="html,css"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">HTML5&CSS3<span>★★★★☆</span></h3>
+            <div class="skill_ctxt">pug、sassを用いた開発を行っております。またSEO対策を意識したマークアップで、且つBEM設計を参考にしたメンテナンス性の高い設計をします。</div>
+          </div>
+        </div>
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_js.png" alt="javascript"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">JavaScript<span>★★★★☆</span></h3>
+            <div class="skill_ctxt">
+              jQueryやその他プラグインで動きのあるwebサイト構築ができます。またReact等のフレームワークの学習も進めているところです。オセロ等の簡単なゲームの作成もできます。</div>
+          </div>
+        </div>
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_php.png" alt="php"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">PHP<span>★★★☆☆</span></h3>
+            <div class="skill_ctxt">
+              静的サイトのWordPressへの移行、簡単なカスタムをできます。またphpを使用した趣味の制作ブツとしてLINEと連携して話しかけると反応するbotや、自作MONACAアプリと連携してお買い物リストをデータベース管理するWebAPIなどを作成したりしました。
+            </div>
+          </div>
+        </div>
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_xd.png" alt="adobe xd"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">Adobe XD<span>★★☆☆☆</span></h3>
+            <div class="skill_ctxt">デザインデータの確認に使用しています。また自作サイトのワイヤーフレーム等の作成に使用しています。</div>
+          </div>
+        </div>
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_npm.png" alt="npm"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">npm<span>★★☆☆☆</span></h3>
+            <div class="skill_ctxt">開発環境構築に使用しています。pug、sassのトランスパイルとかにgulp、ソース変更でbrowser</div>
+          </div>
+        </div>
+        <div class="skill_card srv">
+          <figure><img src="./image/skill_item_git.png" alt="git"></figure>
+          <div class="skill_cwrap">
+            <h3 class="skill_cttl">Git<span>★★☆☆☆</span></h3>
+            <div class="skill_ctxt">Gitも使えます。サブ機とのコード共有目的での使用ぐらいしかしていませんが…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="price" id="price">
+    <div class="wrapper">
+      <h2 class="title2">PRICE</h2>
+      <p class="price_txt">デザインデータからのコーディングを想定しています。ボリュームによって多少前後します。</p>
+      <table class="price_tbl srv">
+        <tr>
+          <th>コーディングのみ<br class="sp">(トップページ)</th>
+          <td>10000~20000円</td>
+        </tr>
+        <tr>
+          <th>コーディングのみ<br class="sp">(下層ページ)</th>
+          <td>5000~8000円</td>
+        </tr>
+        <tr>
+          <th>LPコーディング</th>
+          <td>20000~30000円</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="profile" id="profile">
+    <div class="wrapper">
+      <h2 class="title2">PROFILE</h2>
+      <p class="profile_txt">
+        北海道在住の３０代男です。学習に割ける時間はそれほど多くはありませんが、日々少しずつのスキル向上を心がけております。プログラミング全般が好きで、プライベートでは趣味レベルではありますがwebアプリや、LINEbot、UnityやXamarinやMONACAを使用したモバイルアプリ、マイコンを使った電子工作、windowsアプリケーション等を浅く広く楽しんでおります。
+      </p>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrapper">
+      <h2 class="title2">CONTACT</h2>
+      <p class="contact_txt">お問い合わせはSNS、gmailにてよろしくお願いいたします。</p>
+      <div class="contact_icon">
+        <p class="srv">
+          <a href="#"><img src="./image/contact_icon_fb.png" alt="facebookでお問い合わせ" /></a>
+        </p>
+        <p class="srv">
+          <a href="#"><img src="./image/contact_icon_tw.png" alt="twitterでお問い合わせ" /></a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <p>
+        <small>Copyright©KATSU All Rights Reserved</small>
+      </p>
+    </div>
+  </footer>
+  <div class="go_top" id="go_top">TOP</div>
+
+</body>
