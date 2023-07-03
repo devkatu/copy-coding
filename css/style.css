@@ -172,6 +172,64 @@ body {
   transform: rotate(45deg);
 }
 
+.portfolio_slick .slide-arrow {
+  /* 矢印共通のスタイル */
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+.portfolio_slick .slide-prev {
+  /* 前へ矢印のスタイル */
+  border-top: 3px solid #888;
+  border-left: 3px solid #888;
+  transform: rotate(-45deg);
+  left: -25px;
+}
+.portfolio_slick .slide-next {
+  /* 次へ矢印のスタイル */
+  border-top: 3px solid #888;
+  border-right: 3px solid #888;
+  transform: rotate(45deg);
+  right: -25px;
+}
+
+.slide-dots {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+.slide-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+.slide-dots li button {
+  border: 0;
+  background: 0;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+}
+.slide-dots li button::before {
+  content: "☆";
+  font-size: 16px;
+  color: black;
+}
+.slide-dots li.slick-active button::before {
+  content: "★";
+}
+
 .skill {
   padding: 50px 0;
   background-color: #eee;
