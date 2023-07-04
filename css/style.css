@@ -365,7 +365,8 @@ body {
   color: #8c8c8c;
 }
 
-.go_top {
+.go-top {
+  display: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -375,9 +376,10 @@ body {
   right: 50px;
   text-align: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 
-.go_top::after {
+.go-top::after {
   content: "";
   display: block;
   width: 10px;
@@ -389,10 +391,6 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg);
-}
-
-.go_top:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -662,7 +660,7 @@ body {
     margin: 0 3vw;
   }
 
-  .go_top {
+  .go-top {
     bottom: 5vw;
     right: 5vw;
   }
