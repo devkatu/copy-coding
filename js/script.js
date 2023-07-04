@@ -1,12 +1,16 @@
 $(function () {
 
-  // ★ハンバーガーメニュー用
+  // ★ハンバーガーメニュー
   $(".menu-btn").click(function () {
+    // ハンバーガーメニューボタンとナビゲーションメニューに
+    // 同時にopenクラスを付けたり外したりする
     $(this).toggleClass("open");
     $(".header_nav").toggleClass("open");
   });
 
+  // ★スムーススクロール
   $('a[href^="#"]').click(function () {
+
     // ハンバーガーメニューを閉じる
     $(".menu-btn").removeClass("open");
     $(".header_nav").removeClass("open");
@@ -25,6 +29,23 @@ $(function () {
     return false;
   });
 
+  // ★topへ戻るボタンにクリックイベントを指定
+  $(".go-top").click(function () {
+    // <html>,<body>要素を1秒間のアニメーションしながらTOP位置へスクロール
+    $("html,body").animate({ scrollTop: 0 }, 500);
+  });
+
+  // ★windowにスクロールイベントを指定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      // windowのスクロール位置を取得し、100pxを超えたらTOPへ戻るボタンを表示
+      $(".go-top").fadeIn();
+    } else {
+      // windowのスクロール位置が100pxを超えなければTOPへ戻るボタンを非表示
+      $(".go-top").fadeOut();
+    }
+  });
+
   // ★slick
   $('.portfolio_slick').slick({
     autoplay: true, // 自動再生を有効にする
@@ -36,22 +57,6 @@ $(function () {
     dots: true, // ドットナビゲーションを有効にする
     dotsClass: "slide-dots", // ドットナビのクラス名を指定
     speed: 500, // スライドの移動にかかる時間
-  });
-
-  // topへ戻るボタンにクリックイベントを指定
-  $(".go-top").click(function () {
-    // <html>,<body>要素を1秒間のアニメーションしながらTOP位置へスクロール
-    $("html,body").animate({ scrollTop: 0 }, 500);
-  });
-  // windowにスクロールイベントを指定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      // windowのスクロール位置を取得し、100pxを超えたらTOPへ戻るボタンを表示
-      $(".go-top").fadeIn();
-    } else {
-      // windowのスクロール位置が100pxを超えなければTOPへ戻るボタンを非表示
-      $(".go-top").fadeOut();
-    }
   });
 
 });
