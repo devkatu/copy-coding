@@ -57,6 +57,18 @@ $(function () {
     dots: true, // ドットナビゲーションを有効にする
     dotsClass: "slide-dots", // ドットナビのクラス名を指定
     speed: 500, // スライドの移動にかかる時間
+    responsive: [
+      // レスポンシブスタイルを指定
+      {
+        // 画面幅768px以下は、settingsプロパティ内のオプションに変更
+        breakpoint: 769,
+        settings: {
+          arrows: false, // 矢印を消す
+          centerMode: false, // センターモードをやめる
+          dots: false // ドットナビを消す
+        }
+      }
+    ]
   });
 
 });
